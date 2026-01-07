@@ -7,9 +7,9 @@ def hanoi(n, start, end, sub):
         print(start, end)
         return
 
-    hanoi(n - 1, start, end, sub)
+    hanoi(n - 1, start, sub, end)
     print(start, end)
-    hanoi(n -1, sub, start, end)
+    hanoi(n -1, sub, end, start)
 
 n = int(input())
 k = 2**n -1
